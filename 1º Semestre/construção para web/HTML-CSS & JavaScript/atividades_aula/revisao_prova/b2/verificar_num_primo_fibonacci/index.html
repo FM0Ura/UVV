@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Verificar número primo de Fibonacci</title>
+  </head>
+  <body>
+    <h1>Verifique se um número é um número primo de Fibonacci</h1>
+    <input type="number" id="numero" placeholder="Digite um número" />
+    <button onclick="verificarNumero()">Verificar</button>
+    <div id="resposta"></div>
+    <script>
+      function verificarNumero() {
+        var num = parseInt(document.getElementById("numero").value);
+
+        // Verificar se o número é primo
+        var isPrimo = true;
+        for (var i = 2; i < num; i++) {
+          if (num % i === 0) {
+            isPrimo = false;
+            break;
+          }
+        }
+
+        // Verificar se o número está na sequência de Fibonacci
+        var isFibonacci = false;
+        var a = 0;
+        var b = 1;
+        while (b <= num) {
+          if (b === num) {
+            isFibonacci = true;
+            break;
+          }
+          var temp = a + b;
+          a = b;
+          b = temp;
+        }
+
+        // Exibir o resultado
+        var respostaDiv = document.getElementById("resposta");
+        if (isPrimo && isFibonacci) {
+          respostaDiv.textContent = num + " é um número primo de Fibonacci.";
+        } else {
+          respostaDiv.textContent =
+            num + " não é um número primo de Fibonacci.";
+        }
+      }
+    </script>
+  </body>
+</html>
