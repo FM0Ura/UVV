@@ -9,7 +9,7 @@
         Combinação(n, p) = Arranjo(n,p) / p!
 
         Sendo que: n e p ≥ 0 e n ≥ p
-
+    FEITO!
 */
 
 #include <stdio.h>  // Biblioteca I/O
