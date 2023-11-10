@@ -6,21 +6,22 @@
 Use a função (100 vezes) no programa principal e exiba a informação conforme a seguir:
 
 Exemplo: Tempo: 10000 Segundos = 2 Hora(s) + 46 Minuto(s) + 40 Segundo(s).
+FEITO!
 */
 
 #include <stdio.h> // Biblioteca I/O
 
 // PROTÓTIPO:
 
-int conversor_segundo_hora(int segundo_parametro, int *segundo, int *hora, int *minuto);
+void conversor_segundo_hora(int segundo_parametro, int *segundo, int *hora, int *minuto);
 
 // FUNÇÃO:
 
-int conversor_segundo_hora(int segundo_parametro, int *segundo, int *hora, int *minuto)
+void conversor_segundo_hora(int segundo_parametro, int *segundo, int *hora, int *minuto)
 {
     *segundo = segundo_parametro % 60;
     *minuto = (segundo_parametro / 60) % 60;
-    *hora = (*minuto / 60) % 60;
+    *hora = ((segundo_parametro / 60) / 60) % 60;
 }
 
 int main(void)
