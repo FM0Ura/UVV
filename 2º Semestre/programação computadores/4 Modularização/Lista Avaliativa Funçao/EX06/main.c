@@ -16,27 +16,32 @@
 #include <string.h> // Biblioteca String
 
 // PROTÓTIPOS:
+int Fatorial(int n);
 int Arranjo(int n, int p);
 int Combinacao(int n, int p);
 
 // FUNÇÕES:
-int Arranjo(int n, int p)
+int Fatorial(int n)
 {
-    int index = 1, nFatorial = 1, n_pFatorial = 1;
-    int diferencaN_P = (n - p);
-    // Calculo de: n!
-    while (n != 0)
+    int nFatorial = 1;
+
+    while (n != 1)
     {
         nFatorial *= n;
         n--;
     }
+    return nFatorial;
+}
 
-    // Calculo de: (n-p)!
-    while (diferencaN_P != 0)
-    {
-        n_pFatorial *= diferencaN_P;
-        diferencaN_P--;
-    }
+int Arranjo(int n, int p)
+{
+    int index = 1, nFatorial = 1, n_pFatorial = 1;
+    int diferencaN_P = (n - p);
+    
+    nFatorial = Fatorial(n);
+    n_pFatorial = Fatorial(n - p);
+
+
     return nFatorial / n_pFatorial;
 }
 
@@ -47,11 +52,7 @@ int Combinacao(int n, int p)
 
     arranjo = Arranjo(n, p);
 
-    while (p != 0)
-    {
-        pFatorial *= p;
-        p--;
-    }
+    pFatorial = Fatorial(p);
 
     return arranjo / pFatorial;
 }

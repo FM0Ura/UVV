@@ -1,11 +1,11 @@
 // Adicionar em https://docs.google.com/document/d/1e70Rc_R4aX2GdedeYdmMmUWMrPORz0TYUH1obqkX16U/edit
 
 /*
-16) Crie uma função e seu protótipo que receba como argumento um número inteiro qualquer representando os segundos de realização de um teste de laboratório e retorne as horas, minutos e segundos convertidos deste número.
+16) Crie uma função e seu protótipo que receba como argumento um número inteiro qualquer representando os segundoss de realização de um teste de laboratório e retorne as horass, minutoss e segundoss convertidos deste número.
 
 Use a função (100 vezes) no programa principal e exiba a informação conforme a seguir:
 
-Exemplo: Tempo: 10000 Segundos = 2 Hora(s) + 46 Minuto(s) + 40 Segundo(s).
+Exemplo: Tempo: 10000 segundoss = 2 horas(s) + 46 minutos(s) + 40 segundos(s).
 FEITO!
 */
 
@@ -13,31 +13,31 @@ FEITO!
 
 // PROTÓTIPO:
 
-void conversor_segundo_hora(int segundo_parametro, int *segundo, int *hora, int *minuto);
+void conversorTempo(int tempo, int *segundos, int *horas, int *minutos);
 
 // FUNÇÃO:
 
-void conversor_segundo_hora(int segundo_parametro, int *segundo, int *hora, int *minuto)
+void conversorTempo(int tempo, int *segundos, int *horas, int *minutos)
 {
-    *segundo = segundo_parametro % 60;
-    *minuto = (segundo_parametro / 60) % 60;
-    *hora = ((segundo_parametro / 60) / 60) % 60;
+    *segundos = tempo % 60;
+    *minutos = (tempo / 60) % 60;
+    *horas = ((tempo / 60) / 60) % 60;
 }
 
 int main(void)
 {
-    int segundo_parametro = 0, segundo = 0, minuto = 0, hora = 0;
+    int tempo = 0, segundos = 0, minutos = 0, horas = 0;
     int index = 0;
     do
     {
-        printf("\n\nDigite a quantidade de segundos do %iº teste: ", index + 1);
-        scanf("%i", &segundo_parametro);
+        printf("\n\nDigite a quantidade de segundoss do %iº teste: ", index + 1);
+        scanf("%i", &tempo);
 
-        printf("\nA conversão de %i segundos para HORA-MINUTO-SEGUNDO é: ", segundo);
+        printf("\nA conversão de %i segundoss para horas-minutos-segundos é: ", segundos);
 
-        conversor_segundo_hora(segundo_parametro, &segundo, &hora, &minuto);
+        conversorTempo(tempo, &segundos, &horas, &minutos);
 
-        printf("\n\t%i:%i:%i", hora, minuto, segundo);
+        printf("\n\t%i:%i:%i", horas, minutos, segundos);
         index++;
     } while (index != 100);
 
