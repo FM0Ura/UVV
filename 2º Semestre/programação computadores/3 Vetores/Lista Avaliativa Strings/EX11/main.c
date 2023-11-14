@@ -1,3 +1,9 @@
+// Adicionar em https://docs.google.com/document/d/1e70Rc_R4aX2GdedeYdmMmUWMrPORz0TYUH1obqkX16U/edit
+
+/*
+1) Escrever um programa em C que leia uma mensagem e exiba a freqüência (número de ocorrência) de cada caractere da mensagem. Exemplo de saída: "UVV - CIENCIA DA COMPUTACAO" ('U': 2, 'V': 2,  '    ': 4, '-': 1, 'C': 4, 'I': 2, 'E': 1, 'N': 1, 'A': 4, 'D': 1, 'O': 2, 'M': 1, 'P': 1, 'U': 1, 'T': 1)
+*/
+
 #include <stdio.h>
 #include <string.h>
 
@@ -6,30 +12,30 @@
 int main(void)
 {
     char mensagem[TMNH];
-    int index = 0, index2 = 0, count = 0;
+    int index = 0, index2 = index + 1, count = 0, i;
 
     printf("Digite sua mensagem: ");
     scanf("\n%[^\n]", mensagem);
 
     while (mensagem[index] != '\0')
     {
-        count = 1; // Inicia a contagem
-
-        // Verifica se o caractere já foi encontrado
-        if (mensagem[index] != 0)
+        for (i = 0; i < strlen(mensagem); i++)
         {
-            for (index2 = index + 1; mensagem[index2] != '\0'; index2++)
+            if (mensagem[i] == mensagem[index])
             {
-                if (mensagem[index] == mensagem[index2] || (mensagem[index] == ' ' && mensagem[index2] == ' '))
-                {
-                    count++;
-                    mensagem[index2] = 0; // Marca como encontrado
-                }
+                count++;
             }
-            printf("'%c': %i, ", mensagem[index], count);
+            else
+            {
+                index++;
+            }
         }
 
-        index++;
+        i = 0;
+        for (i = 0; i < strlen(mensagem); i++)
+        {
+            printf("'%c': %i, ", mensagem[i], count);
+        }
     }
 
     return 0;

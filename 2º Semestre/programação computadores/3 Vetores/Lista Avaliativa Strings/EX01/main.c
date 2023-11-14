@@ -1,3 +1,5 @@
+// Adicionar em https://docs.google.com/document/d/1e70Rc_R4aX2GdedeYdmMmUWMrPORz0TYUH1obqkX16U/edit
+
 /*
     Questão:
     1) Escrever um programa em C que leia uma string e exiba a string original e ao contrário na tela.

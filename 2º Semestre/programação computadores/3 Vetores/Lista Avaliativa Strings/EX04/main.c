@@ -1,8 +1,9 @@
+// Adicionar em https://docs.google.com/document/d/1e70Rc_R4aX2GdedeYdmMmUWMrPORz0TYUH1obqkX16U/edit
+
 /*
     Questão:
     4) Escrever um programa em C que leia 1000 mensagens e conte a quantidade de caractere ꞌUꞌ ou ꞌVꞌ.
     FEITO!
-    (Contar com caracteres minusculos?)
 */
 
 #include <stdio.h> // Biblioteca In/Out
@@ -25,7 +26,7 @@ int main(void)
             }
         }
         repeticao++;
-    } while (repeticao != 1000);
+    } while (repeticao != 2);
     printf("\tAo total houveram %i ocorrências de U e V.", quantidade);
     return 0;
 }
