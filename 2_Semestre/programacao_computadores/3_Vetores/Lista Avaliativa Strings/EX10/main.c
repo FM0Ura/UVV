@@ -1,5 +1,3 @@
-// Adicionar em https://docs.google.com/document/d/1e70Rc_R4aX2GdedeYdmMmUWMrPORz0TYUH1obqkX16U/edit
-
 /*
     Questão:
     10) Escrever um programa em C que leia várias palavras (uma por uma) e exiba a palavra e seu tamanho.

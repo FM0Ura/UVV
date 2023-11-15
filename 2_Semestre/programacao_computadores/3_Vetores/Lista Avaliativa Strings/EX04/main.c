@@ -1,12 +1,11 @@
-// Adicionar em https://docs.google.com/document/d/1e70Rc_R4aX2GdedeYdmMmUWMrPORz0TYUH1obqkX16U/edit
-
 /*
     Questão:
-    4) Escrever um programa em C que leia 1000 mensagens e conte a quantidade de caractere ꞌUꞌ ou ꞌVꞌ.
-    FEITO!
+    4) Escrever um programa em C que leia 1000 mensagens e conte a quantidade de
+   caractere ꞌUꞌ ou ꞌVꞌ. FEITO!
 */
 
 #include <stdio.h> // Biblioteca In/Out
+#include <string.h>
 
 #define TMNH 100
 
@@ -20,7 +19,8 @@ int main(void)
         scanf("\n%[^\n]", palavra);
         for (index = 0; palavra[index] != '\0'; index++)
         {
-            if (palavra[index] == 'U' || palavra[index] == 'u' || palavra[index] == 'V' || palavra[index] == 'v')
+            if (palavra[index] == 'U' || palavra[index] == 'u' ||
+                palavra[index] == 'V' || palavra[index] == 'v')
             {
                 quantidade++;
             }

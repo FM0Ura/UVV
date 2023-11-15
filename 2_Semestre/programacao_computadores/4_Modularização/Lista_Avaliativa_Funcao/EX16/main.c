@@ -1,5 +1,3 @@
-// Adicionar em https://docs.google.com/document/d/1e70Rc_R4aX2GdedeYdmMmUWMrPORz0TYUH1obqkX16U/edit
-
 /*
 16) Crie uma função e seu protótipo que receba como argumento um número inteiro qualquer representando os segundoss de realização de um teste de laboratório e retorne as horass, minutoss e segundoss convertidos deste número.
 

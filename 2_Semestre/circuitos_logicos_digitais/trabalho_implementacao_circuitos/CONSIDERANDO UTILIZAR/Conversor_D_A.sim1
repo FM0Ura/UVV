@@ -1,0 +1,27 @@
+<circuit version="1.0.0-SR0" rev="1320" stepSize="1000000" stepsPS="1000000" NLsteps="100000" reaStep="1000000" animate="0" >
+
+<item itemtype="DAC" CircId="DAC-1" mainComp="false" Show_id="false" Show_Val="false" Pos="764,512" rotation="0" hflip="1" vflip="1" label="DAC-1" idLabPos="-16,-80" labelrot="0" valLabPos="-16,20" valLabRot="0" Num_Bits="4 _Bits" Vref="5 V" Input_High_V="2.5 V" Input_Low_V="2.5 V" Input_Imped="1e+09 Ω" Tpd_ps="10000 ps" Tr_ps="3000 ps" Tf_ps="4000 ps" />
+
+<item itemtype="Fixed Voltage" CircId="Fixed Voltage-2" mainComp="false" Show_id="false" Show_Val="false" Pos="700,492" rotation="0" hflip="1" vflip="1" label="Fixed Voltage-2" idLabPos="-64,-24" labelrot="0" valLabPos="-16,8" valLabRot="0" Out="true" Voltage="5 V" />
+
+<item itemtype="Fixed Voltage" CircId="Fixed Voltage-4" mainComp="false" Show_id="false" Show_Val="false" Pos="700,508" rotation="0" hflip="1" vflip="1" label="Fixed Voltage-4" idLabPos="-64,-24" labelrot="0" valLabPos="-16,8" valLabRot="0" Out="true" Voltage="5 V" />
+
+<item itemtype="Fixed Voltage" CircId="Fixed Voltage-5" mainComp="false" Show_id="false" Show_Val="false" Pos="700,524" rotation="0" hflip="1" vflip="1" label="Fixed Voltage-5" idLabPos="-64,-24" labelrot="0" valLabPos="-16,8" valLabRot="0" Out="true" Voltage="5 V" />
+
+<item itemtype="Fixed Voltage" CircId="Fixed Voltage-6" mainComp="false" Show_id="false" Show_Val="false" Pos="700,540" rotation="0" hflip="1" vflip="1" label="Fixed Voltage-6" idLabPos="-64,-24" labelrot="0" valLabPos="-16,8" valLabRot="0" Out="false" Voltage="5 V" />
+
+<item itemtype="Probe" CircId="Probe-10" mainComp="false" Show_id="false" Show_Val="true" Pos="812,488" rotation="-45" hflip="1" vflip="1" label="Probe-10" idLabPos="16,-16" labelrot="45" valLabPos="16,0" valLabRot="45" ShowVolt="true" Threshold="2.5 V" />
+
+<item itemtype="TextComponent" CircId="TextComponent-16" mainComp="false" Show_id="false" Show_Val="false" Pos="500,572" rotation="0" hflip="1" vflip="1" label="TextComponent-16" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Margin="5 _Pixels" Border="1 _Pixels" Opacity="1" Font="Helvetica [Cronyx]" Font_Size="10 _Pixels" Fixed_Width="false" Text="Vo &#x3D Vref*[D0.(2^0)  + D1.(2^1) + ... + Dn-1.(2^N)]&#xa;&#xa;A resolução é dada por:  LSB &#x3D Vrf/(2^N - 1).&#xa;&#xa;Por exemplo:&#xa;Vref &#x3D  5 V.&#xa;N &#x3D 4 (4 bits).&#xa;&#xa;LSB &#x3D 5/(2^4 -  1) &#x3D 0,33 V.&#xa;&#xa;Se entregarmos o valor digital D3 D2 D1 D0 &#x3D 0 1 0 1 teremos na saída:&#xa;&#xa;Vo &#x3D 0,33.[0.(2^3) + 1.(2^2) + 0.(2^1) + 1.(2^0)]&#xa;Vo &#x3D 0,33.[0 + 4 + 0 + 1] &#x3D 1,65." />
+
+<item itemtype="Connector" uid="connector-11" startpinid="Fixed Voltage-2-outnod" endpinid="DAC-1-in0" pointList="716,492,740,492,740,504" />
+
+<item itemtype="Connector" uid="connector-12" startpinid="Fixed Voltage-4-outnod" endpinid="DAC-1-in1" pointList="716,508,724,508,724,512,740,512" />
+
+<item itemtype="Connector" uid="connector-13" startpinid="Fixed Voltage-5-outnod" endpinid="DAC-1-in2" pointList="716,524,724,524,724,520,740,520" />
+
+<item itemtype="Connector" uid="connector-14" startpinid="Fixed Voltage-6-outnod" endpinid="DAC-1-in3" pointList="716,540,740,540,740,528" />
+
+<item itemtype="Connector" uid="connector-15" startpinid="Probe-10-inpin" endpinid="DAC-1-out0" pointList="796,504,788,504" />
+
+</circuit>

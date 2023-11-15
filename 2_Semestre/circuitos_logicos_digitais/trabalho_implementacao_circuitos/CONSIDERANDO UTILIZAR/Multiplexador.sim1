@@ -1,0 +1,111 @@
+<circuit version="1.0.0-SR0" rev="1320" stepSize="1000000" stepsPS="1000000" NLsteps="100000" reaStep="1000000" animate="0" >
+
+<item itemtype="Mux" CircId="Mux-2" mainComp="false" Show_id="false" Show_Val="false" Pos="684,500" rotation="0" hflip="1" vflip="1" label="Mux-2" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Address_Bits="3 _bits" Invert_Inputs="false" Input_High_V="2.5 V" Input_Low_V="2.5 V" Input_Imped="1e+09 Ω" Out_High_V="5 V" Out_Low_V="0 V" Out_Imped="40 Ω" Tpd_ps="10000 ps" Tr_ps="3000 ps" Tf_ps="4000 ps" />
+
+<item itemtype="TextComponent" CircId="TextComponent-3" mainComp="false" Show_id="false" Show_Val="false" Pos="716,520" rotation="0" hflip="1" vflip="1" label="TextComponent-3" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Margin="5 _Pixels" Border="1 _Pixels" Opacity="1" Font="Helvetica [Cronyx]" Font_Size="10 _Pixels" Fixed_Width="false" Text="O multiplexador coloca na saída (Y) o valor&#xa;da entrada selecionada pelo endereço fornecido&#xa;através dos terminais (S2 S1 S0). O terminal&#xa;OE, quando em ZERO, libera a operação do MUX.&#xa;&#xa;Exemplo: &#xa;&#xa;S2 S1 S0   Saída&#xa;0    0   0      D0&#xa;0    0   1      D1&#xa;0    1   0      D2&#xa;.................&#xa;1    1   0      D6&#xa;1    1   1      D7" />
+
+<item itemtype="TextComponent" CircId="TextComponent-4" mainComp="false" Show_id="false" Show_Val="false" Pos="716,368" rotation="0" hflip="1" vflip="1" label="TextComponent-4" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Margin="5 _Pixels" Border="1 _Pixels" Opacity="1" Font="Helvetica [Cronyx]" Font_Size="10 _Pixels" Fixed_Width="false" Text="Exemplo: quero ligar um  equipamento quando&#xa;o valor colocado no endereço seja 101 (D5).&#xa;&#xa;Solução:&#xa;D7 D6 D5 D4 D3 D2 D1 D0 &#x3D 1 1 1 0 0 0 0 0." />
+
+<item itemtype="SwitchDip" CircId="SwitchDip-5" mainComp="false" Show_id="false" Show_Val="false" Pos="624,492" rotation="0" hflip="1" vflip="1" label="SwitchDip-5" idLabPos="-16,-44" labelrot="0" valLabPos="-16,20" valLabRot="0" Size="8 _Switches" State="224" />
+
+<item itemtype="Fixed Voltage" CircId="Fixed Voltage-14" mainComp="false" Show_id="false" Show_Val="false" Pos="568,492" rotation="0" hflip="1" vflip="1" label="Fixed Voltage-14" idLabPos="-64,-24" labelrot="0" valLabPos="-16,8" valLabRot="0" Out="true" Voltage="5 V" />
+
+<item itemtype="Switch" CircId="Switch-37" mainComp="false" Show_id="false" Show_Val="false" Pos="616,556" rotation="0" hflip="1" vflip="1" label="Switch-37" idLabPos="-12,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Norm_Close="false" DT="false" Poles="1 _Poles" />
+
+<item itemtype="Switch" CircId="Switch-39" mainComp="false" Show_id="false" Show_Val="false" Pos="616,588" rotation="0" hflip="1" vflip="1" label="Switch-39" idLabPos="-12,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Norm_Close="false" DT="false" Poles="1 _Poles" />
+
+<item itemtype="Switch" CircId="Switch-41" mainComp="false" Show_id="false" Show_Val="false" Pos="616,620" rotation="0" hflip="1" vflip="1" label="Switch-41" idLabPos="-12,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Norm_Close="false" DT="false" Poles="1 _Poles" />
+
+<item itemtype="DcMotor" CircId="DcMotor-62" mainComp="false" Show_id="false" Show_Val="false" Pos="820,476" rotation="0" hflip="1" vflip="1" label="DcMotor-62" idLabPos="-22,-48" labelrot="0" valLabPos="-14,36" valLabRot="0" RPM_Nominal="60 _RPM" Volt_Nominal="5 V" Resistance="100 Ω" />
+
+<item itemtype="Ground" CircId="Ground-63" mainComp="false" Show_id="false" Show_Val="false" Pos="904,476" rotation="-90" hflip="1" vflip="1" label="Ground-63" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Node" CircId="Node-17" mainComp="false" Pos="608,492" />
+
+<item itemtype="Node" CircId="Node-20" mainComp="false" Pos="608,484" />
+
+<item itemtype="Node" CircId="Node-23" mainComp="false" Pos="608,476" />
+
+<item itemtype="Node" CircId="Node-26" mainComp="false" Pos="608,492" />
+
+<item itemtype="Node" CircId="Node-29" mainComp="false" Pos="608,500" />
+
+<item itemtype="Node" CircId="Node-32" mainComp="false" Pos="608,508" />
+
+<item itemtype="Node" CircId="Node-35" mainComp="false" Pos="608,516" />
+
+<item itemtype="Node" CircId="Node-45" mainComp="false" Pos="592,492" />
+
+<item itemtype="Node" CircId="Node-49" mainComp="false" Pos="592,556" />
+
+<item itemtype="Node" CircId="Node-57" mainComp="false" Pos="592,592" />
+
+<item itemtype="Connector" uid="Connector-6" startpinid="SwitchDip-5-switch0-pinN" endpinid="Mux-2-in0" pointList="640,468,660,468" />
+
+<item itemtype="Connector" uid="Connector-7" startpinid="SwitchDip-5-switch1-pinN" endpinid="Mux-2-in1" pointList="640,476,660,476" />
+
+<item itemtype="Connector" uid="Connector-8" startpinid="SwitchDip-5-switch2-pinN" endpinid="Mux-2-in2" pointList="640,484,660,484" />
+
+<item itemtype="Connector" uid="Connector-9" startpinid="SwitchDip-5-switch3-pinN" endpinid="Mux-2-in3" pointList="640,492,660,492" />
+
+<item itemtype="Connector" uid="Connector-10" startpinid="SwitchDip-5-switch4-pinN" endpinid="Mux-2-in4" pointList="640,500,660,500" />
+
+<item itemtype="Connector" uid="Connector-11" startpinid="SwitchDip-5-switch5-pinN" endpinid="Mux-2-in5" pointList="640,508,660,508" />
+
+<item itemtype="Connector" uid="Connector-12" startpinid="SwitchDip-5-switch6-pinN" endpinid="Mux-2-in6" pointList="640,516,660,516" />
+
+<item itemtype="Connector" uid="Connector-13" startpinid="SwitchDip-5-switch7-pinN" endpinid="Mux-2-in7" pointList="640,524,660,524" />
+
+<item itemtype="Connector" uid="Connector-15" startpinid="Fixed Voltage-14-outnod" endpinid="Node-45-0" pointList="584,492,592,492" />
+
+<item itemtype="Connector" uid="Connector-16" startpinid="SwitchDip-5-switch2-pinP" endpinid="Node-20-0" pointList="616,484,608,484" />
+
+<item itemtype="Connector" uid="Connector-18" startpinid="Node-17-2" endpinid="Node-26-0" pointList="608,492,608,492" />
+
+<item itemtype="Connector" uid="Connector-19" startpinid="SwitchDip-5-switch1-pinP" endpinid="Node-23-0" pointList="616,476,608,476" />
+
+<item itemtype="Connector" uid="Connector-21" startpinid="Node-20-2" endpinid="Node-17-1" pointList="608,484,608,492" />
+
+<item itemtype="Connector" uid="Connector-22" startpinid="SwitchDip-5-switch0-pinP" endpinid="Node-23-1" pointList="616,468,608,468,608,476" />
+
+<item itemtype="Connector" uid="Connector-24" startpinid="Node-23-2" endpinid="Node-20-1" pointList="608,476,608,484" />
+
+<item itemtype="Connector" uid="Connector-25" startpinid="SwitchDip-5-switch4-pinP" endpinid="Node-29-0" pointList="616,500,608,500" />
+
+<item itemtype="Connector" uid="Connector-27" startpinid="Node-26-2" endpinid="SwitchDip-5-switch3-pinP" pointList="608,492,616,492" />
+
+<item itemtype="Connector" uid="Connector-28" startpinid="SwitchDip-5-switch5-pinP" endpinid="Node-32-0" pointList="616,508,608,508" />
+
+<item itemtype="Connector" uid="Connector-30" startpinid="Node-29-2" endpinid="Node-26-1" pointList="608,500,608,492" />
+
+<item itemtype="Connector" uid="Connector-31" startpinid="SwitchDip-5-switch6-pinP" endpinid="Node-35-0" pointList="616,516,608,516" />
+
+<item itemtype="Connector" uid="Connector-33" startpinid="Node-32-2" endpinid="Node-29-1" pointList="608,508,608,500" />
+
+<item itemtype="Connector" uid="Connector-34" startpinid="SwitchDip-5-switch7-pinP" endpinid="Node-35-1" pointList="616,524,608,524,608,516" />
+
+<item itemtype="Connector" uid="Connector-36" startpinid="Node-35-2" endpinid="Node-32-1" pointList="608,516,608,508" />
+
+<item itemtype="Connector" uid="Connector-38" startpinid="Switch-37-switch0pinN" endpinid="Mux-2-in10" pointList="632,556,676,556,676,548" />
+
+<item itemtype="Connector" uid="Connector-40" startpinid="Switch-39-switch0pinN" endpinid="Mux-2-in9" pointList="632,588,684,588,684,548" />
+
+<item itemtype="Connector" uid="Connector-42" startpinid="Switch-41-switch0pinN" endpinid="Mux-2-in8" pointList="632,620,692,620,692,548" />
+
+<item itemtype="Connector" uid="Connector-44" startpinid="Switch-37-pinP0" endpinid="Node-49-0" pointList="600,556,592,556" />
+
+<item itemtype="Connector" uid="Connector-46" startpinid="Node-45-2" endpinid="Node-17-0" pointList="592,492,608,492" />
+
+<item itemtype="Connector" uid="Connector-50" startpinid="Node-49-2" endpinid="Node-45-1" pointList="592,556,592,492" />
+
+<item itemtype="Connector" uid="Connector-48" startpinid="Switch-41-pinP0" endpinid="Node-57-0" pointList="600,620,592,620,592,592" />
+
+<item itemtype="Connector" uid="Connector-58" startpinid="Node-57-2" endpinid="Node-49-1" pointList="592,592,592,556" />
+
+<item itemtype="Connector" uid="Connector-47" startpinid="Switch-39-pinP0" endpinid="Node-57-1" pointList="600,588,592,588,592,592" />
+
+<item itemtype="Connector" uid="Connector-64" startpinid="Ground-63-Gnd" endpinid="DcMotor-62-rPin" pointList="888,476,860,476" />
+
+<item itemtype="Connector" uid="Connector-65" startpinid="DcMotor-62-lPin" endpinid="Mux-2-out0" pointList="780,476,708,476" />
+
+</circuit>

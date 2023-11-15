@@ -1,5 +1,3 @@
-// Adicionar em https://docs.google.com/document/d/1e70Rc_R4aX2GdedeYdmMmUWMrPORz0TYUH1obqkX16U/edit
-
 /*
 
 14) Crie uma função e seu protótipo que calcule a área e volume de uma esfera.

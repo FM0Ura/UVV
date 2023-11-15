@@ -1,0 +1,97 @@
+<circuit version="1.0.0-SR0" rev="1320" stepSize="1000000" stepsPS="1000000" NLsteps="100000" reaStep="1000000" animate="0" >
+
+<item itemtype="Subcircuit" CircId="74XX90-1" mainComp="false" Show_id="true" Show_Val="false" Pos="700,488" rotation="0" hflip="1" vflip="1" label="SN74LS90" idLabPos="-7,-14" labelrot="0" valLabPos="-16,20" valLabRot="0" Logic_Symbol="true" />
+
+<item itemtype="TextComponent" CircId="TextComponent-2" mainComp="false" Show_id="false" Show_Val="false" Pos="540,592" rotation="0" hflip="1" vflip="1" label="TextComponent-2" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Margin="5 _Pixels" Border="1 _Pixels" Opacity="1" Font="Helvetica [Cronyx]" Font_Size="10 _Pixels" Fixed_Width="true" Text="  MS2   MS1    MR2    MR1 &#xa;   1     1      0      0        - saída igual a 9 (1 0 0 1).&#xa;   0     0      1      1        - reinicializa&#xa;   0     0      0      0        - conta.&#xa;&#xa;CP0 - clock para o primeiro FLIP-FLOP (Q0).&#xa;CP1 - Clock para os outros FLIP-FLOps.&#xa;&#xa;Para obter um contador de 4 bits o Clock&#xa;deve ser colocado em  CP0 e a saída Q0&#xa;deve ser ligada a CP1." />
+
+<item itemtype="7-Seg BCD" CircId="7-Seg BCD-3" mainComp="false" Show_id="false" Show_Val="false" Pos="768,444" rotation="0" hflip="1" vflip="1" label="7-Seg BCD-3" idLabPos="-16,-40" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Ground" CircId="Ground-8" mainComp="false" Show_id="false" Show_Val="false" Pos="656,496" rotation="90" hflip="1" vflip="1" label="Ground-8" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Clock" CircId="Clock-22" mainComp="false" Show_id="true" Show_Val="false" Pos="664,544" rotation="0" hflip="1" vflip="1" label="CLOCK" idLabPos="-25,8" labelrot="0" valLabPos="-16,8" valLabRot="0" Out="true" Running="true" Voltage="5 V" Freq="1 Hz" Always_On="false" />
+
+<item itemtype="Subcircuit" CircId="74XX90-29" mainComp="false" Show_id="true" Show_Val="false" Pos="836,480" rotation="0" hflip="1" vflip="1" label="SN74LS90" idLabPos="-8,-15" labelrot="0" valLabPos="-16,20" valLabRot="0" Logic_Symbol="true" />
+
+<item itemtype="Ground" CircId="Ground-30" mainComp="false" Show_id="false" Show_Val="false" Pos="792,488" rotation="90" hflip="1" vflip="1" label="Ground-30" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="7-Seg BCD" CircId="7-Seg BCD-33" mainComp="false" Show_id="false" Show_Val="false" Pos="904,448" rotation="0" hflip="1" vflip="1" label="7-Seg BCD-33" idLabPos="-16,-40" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Push" CircId="Push-59" mainComp="false" Show_id="true" Show_Val="false" Pos="604,520" rotation="0" hflip="1" vflip="1" label="RESET" idLabPos="-13,-25" labelrot="0" valLabPos="-16,20" valLabRot="0" Norm_Close="false" Poles="1 _Poles" />
+
+<item itemtype="Fixed Voltage" CircId="Fixed Voltage-69" mainComp="false" Show_id="false" Show_Val="false" Pos="564,520" rotation="0" hflip="1" vflip="1" label="Fixed Voltage-69" idLabPos="-64,-24" labelrot="0" valLabPos="-16,8" valLabRot="0" Out="true" Voltage="5 V" />
+
+<item itemtype="Node" CircId="Node-11" mainComp="false" Pos="680,496" />
+
+<item itemtype="Node" CircId="Node-20" mainComp="false" Pos="748,512" />
+
+<item itemtype="Node" CircId="Node-31" mainComp="false" Pos="824,488" />
+
+<item itemtype="Node" CircId="Node-51" mainComp="false" Pos="756,536" />
+
+<item itemtype="Node" CircId="Node-57" mainComp="false" Pos="884,504" />
+
+<item itemtype="Node" CircId="Node-62" mainComp="false" Pos="680,520" />
+
+<item itemtype="Node" CircId="Node-64" mainComp="false" Pos="628,520" />
+
+<item itemtype="Node" CircId="Node-67" mainComp="false" Pos="824,512" />
+
+<item itemtype="Connector" uid="connector-70" startpinid="7-Seg BCD-3-in0" endpinid="Node-20-0" pointList="780,476,780,512,748,512" />
+
+<item itemtype="Connector" uid="connector-71" startpinid="7-Seg BCD-3-in1" endpinid="74XX90-1-Q1" pointList="772,476,772,520,740,520" />
+
+<item itemtype="Connector" uid="connector-72" startpinid="7-Seg BCD-3-in2" endpinid="74XX90-1-Q2" pointList="764,476,764,528,740,528" />
+
+<item itemtype="Connector" uid="connector-73" startpinid="7-Seg BCD-3-in3" endpinid="Node-51-0" pointList="756,476,756,536" />
+
+<item itemtype="Connector" uid="connector-74" startpinid="Ground-8-Gnd" endpinid="Node-11-0" pointList="672,496,680,496" />
+
+<item itemtype="Connector" uid="connector-75" startpinid="Node-11-2" endpinid="74XX90-1-MS1" pointList="680,496,692,496" />
+
+<item itemtype="Connector" uid="connector-76" startpinid="Node-20-2" endpinid="74XX90-1-Q0" pointList="748,512,740,512" />
+
+<item itemtype="Connector" uid="connector-77" startpinid="74XX90-1-CP1" endpinid="Node-20-1" pointList="692,552,680,552,680,572,748,572,748,512" />
+
+<item itemtype="Connector" uid="connector-78" startpinid="Clock-22-outnod" endpinid="74XX90-1-CP0" pointList="680,544,692,544" />
+
+<item itemtype="Connector" uid="connector-79" startpinid="Node-31-2" endpinid="74XX90-29-MS1" pointList="824,488,828,488" />
+
+<item itemtype="Connector" uid="connector-80" startpinid="Ground-30-Gnd" endpinid="Node-31-0" pointList="808,488,824,488" />
+
+<item itemtype="Connector" uid="connector-81" startpinid="74XX90-29-CP1" endpinid="Node-57-0" pointList="828,544,824,544,824,564,884,564,884,504" />
+
+<item itemtype="Connector" uid="connector-82" startpinid="74XX90-29-CP0" endpinid="Node-51-1" pointList="828,536,756,536" />
+
+<item itemtype="Connector" uid="connector-83" startpinid="Node-51-2" endpinid="74XX90-1-Q3" pointList="756,536,740,536" />
+
+<item itemtype="Connector" uid="connector-84" startpinid="7-Seg BCD-33-in3" endpinid="74XX90-29-Q3" pointList="892,480,892,528,876,528" />
+
+<item itemtype="Connector" uid="connector-85" startpinid="7-Seg BCD-33-in2" endpinid="74XX90-29-Q2" pointList="900,480,900,520,876,520" />
+
+<item itemtype="Connector" uid="connector-86" startpinid="7-Seg BCD-33-in1" endpinid="74XX90-29-Q1" pointList="908,480,908,512,876,512" />
+
+<item itemtype="Connector" uid="connector-87" startpinid="7-Seg BCD-33-in0" endpinid="Node-57-1" pointList="916,480,916,504,884,504" />
+
+<item itemtype="Connector" uid="connector-88" startpinid="Node-57-2" endpinid="74XX90-29-Q0" pointList="884,504,876,504" />
+
+<item itemtype="Connector" uid="connector-89" startpinid="74XX90-29-MR1" endpinid="Node-67-0" pointList="828,512,824,512" />
+
+<item itemtype="Connector" uid="connector-90" startpinid="74XX90-29-MS2" endpinid="Node-31-1" pointList="828,496,824,496,824,488" />
+
+<item itemtype="Connector" uid="connector-91" startpinid="74XX90-1-MR1" endpinid="Node-62-0" pointList="692,520,680,520" />
+
+<item itemtype="Connector" uid="connector-92" startpinid="74XX90-1-MS2" endpinid="Node-11-1" pointList="692,504,680,504,680,496" />
+
+<item itemtype="Connector" uid="connector-93" startpinid="Push-59-switch0pinN" endpinid="Node-64-0" pointList="620,520,628,520" />
+
+<item itemtype="Connector" uid="connector-94" startpinid="Node-62-2" endpinid="74XX90-1-MR2" pointList="680,520,680,528,692,528" />
+
+<item itemtype="Connector" uid="connector-95" startpinid="Node-64-2" endpinid="Node-62-1" pointList="628,520,680,520" />
+
+<item itemtype="Connector" uid="connector-96" startpinid="Node-67-2" endpinid="74XX90-29-MR2" pointList="824,512,824,520,828,520" />
+
+<item itemtype="Connector" uid="connector-97" startpinid="Fixed Voltage-69-outnod" endpinid="Push-59-pinP0" pointList="580,520,588,520" />
+
+<item itemtype="Connector" uid="connector-98" startpinid="Node-64-1" endpinid="Node-67-1" pointList="628,520,628,580,812,580,812,512,824,512" />
+
+</circuit>

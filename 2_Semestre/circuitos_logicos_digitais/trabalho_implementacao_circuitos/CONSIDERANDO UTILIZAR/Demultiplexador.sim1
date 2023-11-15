@@ -1,0 +1,77 @@
+<circuit version="1.0.0-SR0" rev="1320" stepSize="1000000" stepsPS="1000000" NLsteps="100000" reaStep="1000000" animate="1" >
+
+<item itemtype="Demux" CircId="Demux-1" mainComp="false" Show_id="false" Show_Val="false" Pos="776,536" rotation="0" hflip="1" vflip="1" label="Demux-1" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Address_Bits="3 _bits" Inverted="false" Input_High_V="2.5 V" Input_Low_V="2.5 V" Input_Imped="1e+09 Ω" Out_High_V="5 V" Out_Low_V="0 V" Out_Imped="40 Ω" Tpd_ps="10000 ps" Tr_ps="3000 ps" Tf_ps="4000 ps" />
+
+<item itemtype="TextComponent" CircId="TextComponent-2" mainComp="false" Show_id="false" Show_Val="false" Pos="804,636" rotation="0" hflip="1" vflip="1" label="TextComponent-2" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Margin="5 _Pixels" Border="1 _Pixels" Opacity="1" Font="Helvetica [Cronyx]" Font_Size="10 _Pixels" Fixed_Width="false" Text="Coloca o valor da entrada DI&#xa;na saída selecionada por (S2 S1 S0).&#xa;Por exemplo:&#xa;&#xa;S2 S1 S0 &#x3D 1 0 1&#xa;&#xa;A entrada DI será colocada na saída Q5." />
+
+<item itemtype="Switch" CircId="Switch-3" mainComp="false" Show_id="true" Show_Val="false" Pos="740,600" rotation="0" hflip="1" vflip="1" label="S2" idLabPos="10.0588,2.96074" labelrot="0" valLabPos="-16,20" valLabRot="0" Norm_Close="false" DT="false" Poles="1 _Poles" />
+
+<item itemtype="Switch" CircId="Switch-7" mainComp="false" Show_id="true" Show_Val="false" Pos="740,632" rotation="0" hflip="1" vflip="1" label="S1" idLabPos="10.0588,4.43133" labelrot="0" valLabPos="-16,20" valLabRot="0" Norm_Close="false" DT="false" Poles="1 _Poles" />
+
+<item itemtype="Switch" CircId="Switch-9" mainComp="false" Show_id="true" Show_Val="false" Pos="740,664" rotation="0" hflip="1" vflip="1" label="S0" idLabPos="10.549,4.92152" labelrot="0" valLabPos="-16,20" valLabRot="0" Norm_Close="false" DT="false" Poles="1 _Poles" />
+
+<item itemtype="Fixed Voltage" CircId="Fixed Voltage-11" mainComp="false" Show_id="false" Show_Val="false" Pos="692,632" rotation="0" hflip="1" vflip="1" label="Fixed Voltage-11" idLabPos="-64,-24" labelrot="0" valLabPos="-16,8" valLabRot="0" Out="true" Voltage="5 V" />
+
+<item itemtype="Led" CircId="Led-19" mainComp="false" Show_id="true" Show_Val="false" Pos="844,472" rotation="0" hflip="1" vflip="1" label="LED" idLabPos="-7.17648,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Color="Yellow" Grounded="false" Threshold="2.4 V" MaxCurrent="0.03 A" Resistance="0.6 Ω" />
+
+<item itemtype="DcMotor" CircId="DcMotor-20" mainComp="false" Show_id="true" Show_Val="false" Pos="856,536" rotation="0" hflip="1" vflip="1" label="MOTOR" idLabPos="-15.6275,-47.5098" labelrot="0" valLabPos="-14,36" valLabRot="0" RPM_Nominal="60 _RPM" Volt_Nominal="5 V" Resistance="100 Ω" />
+
+<item itemtype="RelaySPST" CircId="RelaySPST-21" mainComp="false" Show_id="true" Show_Val="false" Pos="856,596" rotation="0" hflip="1" vflip="-1" label="RELÉ" idLabPos="-12.0784,24.1764" labelrot="0" valLabPos="-16,6" valLabRot="0" Norm_Close="false" DT="false" Poles="1 _Poles" IOn="0.02 A" IOff="0.01 A" Inductance="0.1 H" Rcoil="100 Ω" AutoStep="0 _Steps" />
+
+<item itemtype="Resistor" CircId="Resistor-22" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="888,472" rotation="0" hflip="1" vflip="1" label="Resistor-22" idLabPos="-16,-24" labelrot="0" valLabPos="-12.0784,-20.4705" valLabRot="0" Resistance="100 Ω" />
+
+<item itemtype="Ground" CircId="Ground-27" mainComp="false" Show_id="false" Show_Val="false" Pos="936,536" rotation="-90" hflip="1" vflip="1" label="Ground-27" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Fixed Voltage" CircId="Fixed Voltage-35" mainComp="false" Show_id="false" Show_Val="false" Pos="716,536" rotation="0" hflip="1" vflip="1" label="Fixed Voltage-35" idLabPos="-64,-24" labelrot="0" valLabPos="-16,8" valLabRot="0" Out="true" Voltage="5 V" />
+
+<item itemtype="Ground" CircId="Ground-40" mainComp="false" Show_id="false" Show_Val="false" Pos="768,460" rotation="0" hflip="1" vflip="-1" label="Ground-40" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="TextComponent" CircId="TextComponent-42" mainComp="false" Show_id="false" Show_Val="false" Pos="924,552" rotation="0" hflip="1" vflip="1" label="TextComponent-42" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Margin="5 _Pixels" Border="1 _Pixels" Opacity="1" Font="Helvetica [Cronyx]" Font_Size="10 _Pixels" Fixed_Width="false" Text="Exemplo:&#xa;&#xa;S2 S1 S0 &#x3D 0 0 1 - LIGA LED.&#xa;S2 S1 S0 &#x3D 1 0 0 - LIGA MOTOR.&#xa;S2 S1 S0 &#x3D 1 1 1 - LIGA RELÉ." />
+
+<item itemtype="Node" CircId="Node-14" mainComp="false" Pos="716,632" />
+
+<item itemtype="Node" CircId="Node-17" mainComp="false" Pos="716,632" />
+
+<item itemtype="Node" CircId="Node-30" mainComp="false" Pos="912,536" />
+
+<item itemtype="Node" CircId="Node-33" mainComp="false" Pos="912,536" />
+
+<item itemtype="Connector" uid="Connector-6" startpinid="Switch-3-switch0pinN" endpinid="Demux-1-in2" pointList="756,600,768,600,768,584" />
+
+<item itemtype="Connector" uid="Connector-8" startpinid="Switch-7-switch0pinN" endpinid="Demux-1-in1" pointList="756,632,776,632,776,584" />
+
+<item itemtype="Connector" uid="Connector-10" startpinid="Switch-9-switch0pinN" endpinid="Demux-1-in0" pointList="756,664,784,664,784,584" />
+
+<item itemtype="Connector" uid="Connector-12" startpinid="Fixed Voltage-11-outnod" endpinid="Node-14-0" pointList="708,632,716,632" />
+
+<item itemtype="Connector" uid="Connector-13" startpinid="Switch-3-pinP0" endpinid="Node-14-1" pointList="724,600,716,600,716,632" />
+
+<item itemtype="Connector" uid="Connector-15" startpinid="Node-14-2" endpinid="Node-17-0" pointList="716,632,716,632" />
+
+<item itemtype="Connector" uid="Connector-16" startpinid="Switch-9-pinP0" endpinid="Node-17-1" pointList="724,664,716,664,716,632" />
+
+<item itemtype="Connector" uid="Connector-18" startpinid="Node-17-2" endpinid="Switch-7-pinP0" pointList="716,632,724,632" />
+
+<item itemtype="Connector" uid="Connector-23" startpinid="Resistor-22-lPin" endpinid="Led-19-rPin" pointList="872,472,860,472" />
+
+<item itemtype="Connector" uid="Connector-26" startpinid="RelaySPST-21-inductor-lPin" endpinid="Demux-1-out7" pointList="840,596,808,596,808,560,800,560" />
+
+<item itemtype="Connector" uid="Connector-28" startpinid="Ground-27-Gnd" endpinid="Node-33-0" pointList="920,536,912,536" />
+
+<item itemtype="Connector" uid="Connector-29" startpinid="Resistor-22-rPin" endpinid="Node-30-1" pointList="904,472,912,472,912,536" />
+
+<item itemtype="Connector" uid="Connector-31" startpinid="Node-30-2" endpinid="DcMotor-20-rPin" pointList="912,536,896,536" />
+
+<item itemtype="Connector" uid="Connector-32" startpinid="RelaySPST-21-inductor-rPin" endpinid="Node-33-1" pointList="872,596,912,596,912,536" />
+
+<item itemtype="Connector" uid="Connector-34" startpinid="Node-33-2" endpinid="Node-30-0" pointList="912,536,912,536" />
+
+<item itemtype="Connector" uid="Connector-36" startpinid="Fixed Voltage-35-outnod" endpinid="Demux-1-in3" pointList="732,536,752,536" />
+
+<item itemtype="Connector" uid="Connector-24" startpinid="Led-19-lPin" endpinid="Demux-1-out1" pointList="828,472,808,472,808,512,800,512" />
+
+<item itemtype="Connector" uid="Connector-41" startpinid="Ground-40-Gnd" endpinid="Demux-1-in4" pointList="768,476,768,488" />
+
+<item itemtype="Connector" uid="Connector-44" startpinid="DcMotor-20-lPin" endpinid="Demux-1-out4" pointList="816,536,800,536" />
+
+</circuit>

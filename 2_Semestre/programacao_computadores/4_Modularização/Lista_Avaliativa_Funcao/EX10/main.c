@@ -1,5 +1,3 @@
-// Adicionar em https://docs.google.com/document/d/1e70Rc_R4aX2GdedeYdmMmUWMrPORz0TYUH1obqkX16U/edit
-
 /*
     10) Crie uma função para uma "mini" calculadora (somente de inteiros), ou seja, passe como argumento:
 
