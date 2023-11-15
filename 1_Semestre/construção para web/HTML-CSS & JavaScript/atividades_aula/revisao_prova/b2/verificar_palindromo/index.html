@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Verificar se uma string é um palíndromo</title>
+  </head>
+  <body>
+    <h1>Descubra se uma palavra é uma palíndromo!</h1>
+    <input type="text" placeholder="Digite a palavra" />
+    <button>Verificar</button>
+    <div id="resposta"></div>
+    <script>
+      function verificarPalindromo(str) {
+        const regex = /[^\w]|_/g;
+        const cleanStr = str.toLowerCase().replace(regex, "");
+
+        // Verificar se a string invertida é igual à original
+        const reversedStr = cleanStr.split("").reverse().join("");
+        return cleanStr === reversedStr;
+      }
+
+      const btn = document.querySelector("button");
+      btn.addEventListener("click", function () {
+        const input = document.querySelector("input");
+        const resposta = document.querySelector("#resposta");
+        const palavra = input.value;
+
+        if (verificarPalindromo(palavra)) {
+          resposta.textContent = `"${palavra}" é um palíndromo!`;
+        } else {
+          resposta.textContent = `"${palavra}" não é um palíndromo.`;
+        }
+      });
+    </script>
+  </body>
+</html>

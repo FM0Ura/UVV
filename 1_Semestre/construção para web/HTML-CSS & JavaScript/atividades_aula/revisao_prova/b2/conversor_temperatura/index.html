@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conversor de Temperatura</title>
+  </head>
+  <body>
+    <h1>Conversor de Temperatura</h1>
+    <div>
+      <input
+        type="number"
+        placeholder="Digite a temperatura"
+        id="inputTemperatura" />
+    </div>
+    Selecione a escala de temperatura que o número está:
+    <select id="selecaoTemp">
+      <option value="celsius">Celsius</option>
+      <option value="kelvin">Kelvin</option>
+      <option value="fahrenheit">Fahrenheit</option>
+    </select>
+    <button onclick="converterTemperatura()">Converter</button>
+    <div id="respCelsius">
+      <h5>Resultado em Celsius:</h5>
+    </div>
+    <div id="respFahrenheit">
+      <h5>Resultado em Fahrenheit:</h5>
+    </div>
+    <div id="respKelvin">
+      <h5>Resultado em Kelvin:</h5>
+    </div>
+    <div id="error" style="color: red"></div>
+
+    <script>
+      function converterTemperatura() {
+        var temperatura = parseFloat(
+          document.getElementById("inputTemperatura").value
+        );
+        var escalaSelecionada = document.getElementById("selecaoTemp").value;
+
+        var celsius, fahrenheit, kelvin;
+
+        if (escalaSelecionada === "celsius") {
+          if (temperatura < -273.15) {
+            document.getElementById("error").innerHTML =
+              "Valor inválido para Celsius!";
+            return;
+          }
+          celsius = temperatura;
+          fahrenheit = (temperatura * 9) / 5 + 32;
+          kelvin = temperatura + 273.15;
+        } else if (escalaSelecionada === "kelvin") {
+          if (temperatura < 0) {
+            document.getElementById("error").innerHTML =
+              "Valor inválido para Kelvin!";
+            return;
+          }
+          celsius = temperatura - 273.15;
+          fahrenheit = (temperatura - 273.15) * (9 / 5) + 32;
+          kelvin = temperatura;
+        } else if (escalaSelecionada === "fahrenheit") {
+          if (temperatura < -459.67) {
+            document.getElementById("error").innerHTML =
+              "Valor inválido para Fahrenheit!";
+            return;
+          }
+          celsius = (temperatura - 32) * (5 / 9);
+          fahrenheit = temperatura;
+          kelvin = (temperatura - 32) * (5 / 9) + 273.15;
+        }
+
+        document.getElementById("respCelsius").innerHTML =
+          "<h5>Resultado em Celsius:</h5>" + celsius;
+        document.getElementById("respFahrenheit").innerHTML =
+          "<h5>Resultado em Fahrenheit:</h5>" + fahrenheit;
+        document.getElementById("respKelvin").innerHTML =
+          "<h5>Resultado em Kelvin:</h5>" + kelvin;
+
+        // Limpar a div de erro caso não haja erro
+        document.getElementById("error").innerHTML = "";
+      }
+    </script>
+  </body>
+</html>

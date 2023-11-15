@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gerador de Cores Aleatórias</title>
+    <style>
+      body {
+        transition: background-color 0.5s;
+      }
+      #RGBcor {
+        padding-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Gere cores aleatoriamente</h1>
+    <button onclick="gerarCor()">Gerar cor</button>
+    <div id="RGBcor"></div>
+    <script>
+      function gerarCor() {
+        var r = Math.round(Math.random() * 255);
+        var g = Math.round(Math.random() * 255);
+        var b = Math.round(Math.random() * 255);
+        var cor =
+          "#" + componentToHex(r) + componentToHex(g) + componentToHex(b);
+        var rgb = "RGB: " + r + ", " + g + ", " + b;
+        document.getElementById("RGBcor").textContent = cor + " " + rgb;
+        document.body.style.backgroundColor = cor;
+      }
+
+      function componentToHex(c) {
+        var hex = c.toString(16);
+        return hex.length == 1 ? "0" + hex : hex;
+      }
+    </script>
+  </body>
+</html>
