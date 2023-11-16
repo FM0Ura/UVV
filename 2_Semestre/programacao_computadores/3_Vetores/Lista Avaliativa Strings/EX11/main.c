@@ -9,26 +9,42 @@
 
 int main(void)
 {
-    char mensagem[TMNH];
-    int index = 0, count = 0, i = 0;
-
-    printf("Digite sua mensagem: ");
-    scanf("\n%[^\n]", mensagem);
-
-    while (mensagem[index] != '\0')
+    char mensagem[TMNH], auxiliar[TMNH];
+    int index = 0, count = 0, i = 0, index2 = 0, index3 = 0;
+    do
     {
-        count = 0;
+        printf("Digite sua mensagem: ");
+        scanf("\n%[^\n]", mensagem);
+
         for (i = 0; i < strlen(mensagem); i++)
         {
-            if (mensagem[i] == mensagem[index])
-            {
-                count++;
-            }
-        }
-        printf(" '%c': %i ", mensagem[index], count);
+            auxiliar[i] = mensagem[i];
+            count = 0;
 
-        index++;
-    }
+            for (index2 = i; index2 < strlen(mensagem); index2++)
+            {
+                if (mensagem[index2] == auxiliar[i])
+                    count++;
+                for (index3 = index2 - 1; index3 >= 0; index3--)
+                {
+                    if ((mensagem[index3] == auxiliar[i] && index3 < i))
+                    {
+                        count--;
+                        if (count < 0)
+                        {
+                            count = 0;
+                        }
+                    }
+                }
+            }
+            if (count != 0)
+            {
+                printf("\n'%c': %i ", mensagem[index], count);
+            }
+
+            index++;
+        }
+    } while (strcmp(mensagem, "fim") && strcmp(mensagem, "FIM"));
 
     return 0;
 }

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Validador de senha</title>
+    <style>
+      ul {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .valid {
+        color: green;
+      }
+
+      .invalid {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Validador de senha</h1>
+    <h3>Critérios para a senha:</h3>
+    <ul>
+      <li id="length">ter pelo menos 8 caracteres</li>
+      <li id="uppercase">conter pelo menos uma letra maiúscula</li>
+      <li id="lowercase">conter pelo menos uma letra minúscula</li>
+      <li id="number">conter pelo menos um número</li>
+    </ul>
+
+    <input type="text" id="campo" placeholder="Digite a senha" />
+    <button id="botao" onclick="validadorSenha()">Verificar</button>
+    <div id="check"></div>
+
+    <script>
+
+      // Obtém a senha através do input
+      
+      function validadorSenha() {
+        
+      var senha = document.getElementById("campo").value;
+      // Recebe quais são os critérios
+      var lengthCriteria = document.getElementById("length");
+      var uppercaseCriteria = document.getElementById("uppercase");
+      var lowercaseCriteria = document.getElementById("lowercase");
+      var numberCriteria = document.getElementById("number");
+          
+      // Verifica se os critérios estão sendo atendidos
+      var lengthValid = senha.length >= 8;
+      var uppercaseValid = /[A-Z]/.test(senha);
+      var lowercaseValid = /[a-z]/.test(senha);
+      var numberValid = /[0-9]/.test(senha);
+          
+      // Atualiza as classes dos elementos de critérios para exibir o estado (válido ou inválido)
+      lengthCriteria.className = lengthValid ? "valid" : "invalid";
+      uppercaseCriteria.className = uppercaseValid ? "valid" : "invalid";
+      lowercaseCriteria.className = lowercaseValid ? "valid" : "invalid";
+      numberCriteria.className = numberValid ? "valid" : "invalid";
+          
+      // Exibe uma resposta informando se a senha é válida ou inválida
+      document.getElementById("check").innerHTML =
+        lengthValid && uppercaseValid && lowercaseValid && numberValid
+          ? "Senha válida"
+          : "Senha inválida";
+        }
+      
+    </script>
+  </body>
+</html>

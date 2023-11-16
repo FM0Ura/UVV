@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculo de fatorial</title>
+  </head>
+  <body>
+    <h1>Descubra qual o resultado do calculo do fatorial de um número</h1>
+    <input type="number" placeholder="Digite o número" />
+    <button>Calcular</button>
+    <div id="resposta"></div>
+    <script>
+      // Função para calcular o fatorial de um número.
+      function calcularFatorial(numero) {
+        // Verifica se o número é 0 ou 1, pois o fatorial deles é sempre 1
+        if (numero === 0 || numero === 1) {
+          return 1;
+        } else {
+          // Inicializa a variável "fatorial" como 1
+          let fatorial = 1;
+          // Loop que calcula o fatorial, multiplicando os números de 2 até o número fornecido
+          for (let i = 2; i <= numero; i++) {
+            fatorial *= i;
+          }
+          // Retorna o resultado do fatorial
+          return fatorial;
+        }
+      }
+
+      // Seleciona o botão de calcular, o input para o número e a div para exibir a resposta
+      const calcularButton = document.querySelector("button");
+      const inputNumero = document.querySelector("input");
+      const respostaDiv = document.querySelector("#resposta");
+
+      // Adiciona um evento ao clicar no botão de calcular
+      calcularButton.addEventListener("click", function () {
+        // Obtém o número digitado pelo usuário
+        const numero = parseInt(inputNumero.value);
+        // Chama a função calcularFatorial para obter o resultado do fatorial
+        const fatorial = calcularFatorial(numero);
+        // Exibe a resposta na div
+        respostaDiv.textContent = `O fatorial de ${numero} é ${fatorial}.`;
+      });
+    </script>
+  </body>
+</html>
