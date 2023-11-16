@@ -1,0 +1,185 @@
+<circuit version="1.0.0-SR1" rev="1402" stepSize="1000000" stepsPS="1000000" NLsteps="100000" reaStep="1000000" animate="1" >
+
+<item itemtype="Resistor" CircId="Resistor-474" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="-816,104" rotation="90" hflip="1" vflip="1" label="Resistor-474" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Resistance="100 Ω" />
+
+<item itemtype="Buffer" CircId="Buffer-475" mainComp="false" Show_id="false" Show_Val="false" Pos="-508,176" rotation="90" hflip="1" vflip="1" label="Buffer-475" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Tristate="false" Inverted="true" Open_Collector="false" Input_High_V="2.5 V" Input_Low_V="2.5 V" Input_Imped="1000 MΩ" Out_High_V="5 V" Out_Low_V="0 V" Out_Imped="40 Ω" initHigh="false" Tpd_ps="10000 ps" Tr_ps="3000 ps" Tf_ps="4000 ps" />
+
+<item itemtype="Clock" CircId="Clock-476" mainComp="false" Show_id="false" Show_Val="false" Pos="-896,200" rotation="0" hflip="1" vflip="1" label="Clock-476" idLabPos="-64,-24" labelrot="0" valLabPos="-16,8" valLabRot="0" Out="true" Running="true" Voltage="5 V" Freq="1 Hz" Always_On="false" />
+
+<item itemtype="Buffer" CircId="Buffer-477" mainComp="false" Show_id="false" Show_Val="false" Pos="-644,176" rotation="90" hflip="1" vflip="1" label="Buffer-477" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Tristate="false" Inverted="true" Open_Collector="false" Input_High_V="2.5 V" Input_Low_V="2.5 V" Input_Imped="1000 MΩ" Out_High_V="5 V" Out_Low_V="0 V" Out_Imped="40 Ω" initHigh="false" Tpd_ps="10000 ps" Tr_ps="3000 ps" Tf_ps="4000 ps" />
+
+<item itemtype="FlipFlopD" CircId="FlipFlopD-479" mainComp="false" Show_id="false" Show_Val="false" Pos="-580,192" rotation="0" hflip="1" vflip="1" label="FlipFlopD-479" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" UseRS="true" Reset_Inverted="false" Clock_Inverted="false" Trigger="Clock" Input_High_V="2.5 V" Input_Low_V="2.5 V" Input_Imped="1000 MΩ" Out_High_V="5 V" Out_Low_V="0 V" Out_Imped="40 Ω" Tpd_ps="10000 ps" Tr_ps="3000 ps" Tf_ps="4000 ps" />
+
+<item itemtype="Buffer" CircId="Buffer-480" mainComp="false" Show_id="false" Show_Val="false" Pos="-768,176" rotation="90" hflip="1" vflip="1" label="Buffer-480" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Tristate="false" Inverted="true" Open_Collector="false" Input_High_V="2.5 V" Input_Low_V="2.5 V" Input_Imped="1000 MΩ" Out_High_V="5 V" Out_Low_V="0 V" Out_Imped="40 Ω" initHigh="false" Tpd_ps="10000 ps" Tr_ps="3000 ps" Tf_ps="4000 ps" />
+
+<item itemtype="And Gate" CircId="And Gate-481" mainComp="false" Show_id="false" Show_Val="false" Pos="-616,252" rotation="0" hflip="1" vflip="1" label="And Gate-481" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Num_Inputs="2 _Inputs" Inverted="false" Open_Collector="false" Input_High_V="2.5 V" Input_Low_V="2.5 V" Input_Imped="1000 MΩ" Out_High_V="5 V" Out_Low_V="0 V" Out_Imped="40 Ω" initHigh="false" Tpd_ps="10000 ps" Tr_ps="3000 ps" Tf_ps="4000 ps" />
+
+<item itemtype="TextComponent" CircId="TextComponent-484" mainComp="false" Show_id="false" Show_Val="false" Pos="-964,24" rotation="0" hflip="1" vflip="1" label="TextComponent-484" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Margin="5 _Pixels" Border="1 _Pixels" Opacity="1" Font="Helvetica [Cronyx]" Font_Size="14 _Pixels" Fixed_Width="false" Text="Botão de Inicialização" />
+
+<item itemtype="TextComponent" CircId="TextComponent-485" mainComp="false" Show_id="false" Show_Val="false" Pos="-608,32" rotation="0" hflip="1" vflip="1" label="TextComponent-485" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Margin="5 _Pixels" Border="1 _Pixels" Opacity="1" Font="Helvetica [Cronyx]" Font_Size="14 _Pixels" Fixed_Width="false" Text="Valor inicial" />
+
+<item itemtype="And Gate" CircId="And Gate-487" mainComp="false" Show_id="false" Show_Val="false" Pos="-480,256" rotation="0" hflip="1" vflip="1" label="And Gate-487" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Num_Inputs="2 _Inputs" Inverted="false" Open_Collector="false" Input_High_V="2.5 V" Input_Low_V="2.5 V" Input_Imped="1000 MΩ" Out_High_V="5 V" Out_Low_V="0 V" Out_Imped="40 Ω" initHigh="false" Tpd_ps="10000 ps" Tr_ps="3000 ps" Tf_ps="4000 ps" />
+
+<item itemtype="TextComponent" CircId="TextComponent-488" mainComp="false" Show_id="false" Show_Val="false" Pos="-924,220" rotation="0" hflip="1" vflip="1" label="TextComponent-488" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Margin="5 _Pixels" Border="1 _Pixels" Opacity="1" Font="Helvetica [Cronyx]" Font_Size="14 _Pixels" Fixed_Width="false" Text="Clock" />
+
+<item itemtype="Ground" CircId="Ground-494" mainComp="false" Show_id="false" Show_Val="false" Pos="-816,152" rotation="0" hflip="1" vflip="1" label="Ground-494" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="FlipFlopD" CircId="FlipFlopD-495" mainComp="false" Show_id="false" Show_Val="false" Pos="-712,192" rotation="0" hflip="1" vflip="1" label="FlipFlopD-495" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" UseRS="true" Reset_Inverted="false" Clock_Inverted="false" Trigger="Clock" Input_High_V="2.5 V" Input_Low_V="2.5 V" Input_Imped="1000 MΩ" Out_High_V="5 V" Out_Low_V="0 V" Out_Imped="40 Ω" Tpd_ps="10000 ps" Tr_ps="3000 ps" Tf_ps="4000 ps" />
+
+<item itemtype="And Gate" CircId="And Gate-497" mainComp="false" Show_id="false" Show_Val="false" Pos="-740,248" rotation="0" hflip="1" vflip="1" label="And Gate-497" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Num_Inputs="2 _Inputs" Inverted="false" Open_Collector="false" Input_High_V="2.5 V" Input_Low_V="2.5 V" Input_Imped="1000 MΩ" Out_High_V="5 V" Out_Low_V="0 V" Out_Imped="40 Ω" initHigh="false" Tpd_ps="10000 ps" Tr_ps="3000 ps" Tf_ps="4000 ps" />
+
+<item itemtype="SwitchDip" CircId="SwitchDip-501" mainComp="false" Show_id="false" Show_Val="false" Pos="-564,104" rotation="-90" hflip="1" vflip="1" label="SwitchDip-501" idLabPos="-16,-44" labelrot="0" valLabPos="-16,20" valLabRot="0" Size="4 _Switches" State="240" />
+
+<item itemtype="Fixed Voltage" CircId="Fixed Voltage-502" mainComp="false" Show_id="false" Show_Val="false" Pos="-896,72" rotation="0" hflip="1" vflip="1" label="Fixed Voltage-502" idLabPos="-64,-24" labelrot="0" valLabPos="-16,8" valLabRot="0" Out="true" Voltage="5 V" />
+
+<item itemtype="7-Seg BCD" CircId="7-Seg BCD-503" mainComp="false" Show_id="false" Show_Val="false" Pos="-224,40" rotation="0" hflip="1" vflip="1" label="7-Seg BCD-503" idLabPos="-16,-40" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="FlipFlopD" CircId="FlipFlopD-506" mainComp="false" Show_id="false" Show_Val="false" Pos="-448,192" rotation="0" hflip="1" vflip="1" label="FlipFlopD-506" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" UseRS="true" Reset_Inverted="false" Clock_Inverted="false" Trigger="Clock" Input_High_V="2.5 V" Input_Low_V="2.5 V" Input_Imped="1000 MΩ" Out_High_V="5 V" Out_Low_V="0 V" Out_Imped="40 Ω" Tpd_ps="10000 ps" Tr_ps="3000 ps" Tf_ps="4000 ps" />
+
+<item itemtype="Push" CircId="Push-509" mainComp="false" Show_id="false" Show_Val="false" Pos="-852,72" rotation="0" hflip="1" vflip="1" label="Push-509" idLabPos="-12,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Norm_Close="false" Poles="1 _Poles" />
+
+<item itemtype="FlipFlopD" CircId="FlipFlopD-563" mainComp="false" Show_id="false" Show_Val="false" Pos="-316,192" rotation="0" hflip="1" vflip="1" label="FlipFlopD-563" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" UseRS="true" Reset_Inverted="false" Clock_Inverted="false" Trigger="Clock" Input_High_V="2.5 V" Input_Low_V="2.5 V" Input_Imped="1000 MΩ" Out_High_V="5 V" Out_Low_V="0 V" Out_Imped="40 Ω" Tpd_ps="10000 ps" Tr_ps="3000 ps" Tf_ps="4000 ps" />
+
+<item itemtype="Buffer" CircId="Buffer-564" mainComp="false" Show_id="false" Show_Val="false" Pos="-368,176" rotation="90" hflip="1" vflip="1" label="Buffer-564" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Tristate="false" Inverted="true" Open_Collector="false" Input_High_V="2.5 V" Input_Low_V="2.5 V" Input_Imped="1000 MΩ" Out_High_V="5 V" Out_Low_V="0 V" Out_Imped="40 Ω" initHigh="false" Tpd_ps="10000 ps" Tr_ps="3000 ps" Tf_ps="4000 ps" />
+
+<item itemtype="And Gate" CircId="And Gate-565" mainComp="false" Show_id="false" Show_Val="false" Pos="-344,256" rotation="0" hflip="1" vflip="1" label="And Gate-565" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Num_Inputs="2 _Inputs" Inverted="false" Open_Collector="false" Input_High_V="2.5 V" Input_Low_V="2.5 V" Input_Imped="1000 MΩ" Out_High_V="5 V" Out_Low_V="0 V" Out_Imped="40 Ω" initHigh="false" Tpd_ps="10000 ps" Tr_ps="3000 ps" Tf_ps="4000 ps" />
+
+<item itemtype="Node" CircId="Node-471" mainComp="false" Pos="-540,200" />
+
+<item itemtype="Node" CircId="Node-489" mainComp="false" Pos="-756,292" />
+
+<item itemtype="Node" CircId="Node-498" mainComp="false" Pos="-632,292" />
+
+<item itemtype="Node" CircId="Node-504" mainComp="false" Pos="-816,72" />
+
+<item itemtype="Node" CircId="Node-508" mainComp="false" Pos="-672,200" />
+
+<item itemtype="Node" CircId="Node-550" mainComp="false" Pos="-788,72" />
+
+<item itemtype="Node" CircId="Node-553" mainComp="false" Pos="-588,72" />
+
+<item itemtype="Node" CircId="Node-556" mainComp="false" Pos="-580,72" />
+
+<item itemtype="Node" CircId="Node-559" mainComp="false" Pos="-572,72" />
+
+<item itemtype="Node" CircId="Node-618" mainComp="false" Pos="-496,292" />
+
+<item itemtype="Node" CircId="Node-624" mainComp="false" Pos="-408,200" />
+
+<item itemtype="Node" CircId="Node-633" mainComp="false" Pos="-712,156" />
+
+<item itemtype="Node" CircId="Node-636" mainComp="false" Pos="-580,156" />
+
+<item itemtype="Node" CircId="Node-639" mainComp="false" Pos="-448,160" />
+
+<item itemtype="Node" CircId="Node-642" mainComp="false" Pos="-316,160" />
+
+<item itemtype="Connector" uid="connector-568" startpinid="And Gate-487-in0" endpinid="Buffer-475-out" pointList="-496,252,-508,252,-508,192" />
+
+<item itemtype="Connector" uid="connector-569" startpinid="FlipFlopD-506-in3" endpinid="Node-471-1" pointList="-464,200,-540,200" />
+
+<item itemtype="Connector" uid="connector-573" startpinid="FlipFlopD-479-in0" endpinid="Node-471-0" pointList="-596,192,-612,192,-612,224,-540,224,-540,200" />
+
+<item itemtype="Connector" uid="connector-574" startpinid="And Gate-497-in0" endpinid="Buffer-480-out" pointList="-756,244,-768,244,-768,192" />
+
+<item itemtype="Connector" uid="connector-576" startpinid="FlipFlopD-506-in0" endpinid="Node-624-0" pointList="-464,192,-480,192,-480,224,-408,224,-408,200" />
+
+<item itemtype="Connector" uid="connector-577" startpinid="And Gate-487-out" endpinid="FlipFlopD-506-in2" pointList="-464,256,-440,256,-440,216" />
+
+<item itemtype="Connector" uid="connector-580" startpinid="Push-509-switch0pinN" endpinid="Node-504-0" pointList="-836,72,-816,72" />
+
+<item itemtype="Connector" uid="connector-581" startpinid="And Gate-481-out" endpinid="FlipFlopD-479-in2" pointList="-600,252,-572,252,-572,216" />
+
+<item itemtype="Connector" uid="connector-584" startpinid="Fixed Voltage-502-outnod" endpinid="Push-509-pinP0" pointList="-880,72,-868,72" />
+
+<item itemtype="Connector" uid="connector-587" startpinid="FlipFlopD-479-in3" endpinid="Node-508-1" pointList="-596,200,-672,200" />
+
+<item itemtype="Connector" uid="connector-588" startpinid="And Gate-497-out" endpinid="FlipFlopD-495-in2" pointList="-724,248,-704,248,-704,216" />
+
+<item itemtype="Connector" uid="connector-589" startpinid="FlipFlopD-495-in0" endpinid="Node-508-0" pointList="-728,192,-744,192,-744,224,-672,224,-672,200" />
+
+<item itemtype="Connector" uid="connector-591" startpinid="Node-498-2" endpinid="Node-489-0" pointList="-632,292,-756,292" />
+
+<item itemtype="Connector" uid="connector-594" startpinid="Node-471-2" endpinid="FlipFlopD-479-out1" pointList="-540,200,-556,200" />
+
+<item itemtype="Connector" uid="connector-595" startpinid="And Gate-481-in0" endpinid="Buffer-477-out" pointList="-632,248,-644,248,-644,192" />
+
+<item itemtype="Connector" uid="connector-596" startpinid="Node-508-2" endpinid="FlipFlopD-495-out1" pointList="-672,200,-688,200" />
+
+<item itemtype="Connector" uid="connector-599" startpinid="And Gate-481-in1" endpinid="Node-498-1" pointList="-632,256,-632,292" />
+
+<item itemtype="Connector" uid="connector-600" startpinid="Ground-494-Gnd" endpinid="Resistor-474-rPin" pointList="-816,136,-816,120" />
+
+<item itemtype="Connector" uid="connector-601" startpinid="And Gate-497-in1" endpinid="Node-489-1" pointList="-756,252,-756,292" />
+
+<item itemtype="Connector" uid="connector-602" startpinid="Clock-476-outnod" endpinid="FlipFlopD-495-in3" pointList="-880,200,-728,200" />
+
+<item itemtype="Connector" uid="connector-603" startpinid="Resistor-474-lPin" endpinid="Node-504-1" pointList="-816,88,-816,72" />
+
+<item itemtype="Connector" uid="connector-604" startpinid="Buffer-475-in0" endpinid="Node-639-0" pointList="-508,160,-448,160" />
+
+<item itemtype="Connector" uid="connector-605" startpinid="Buffer-477-in0" endpinid="Node-636-0" pointList="-644,160,-644,156,-580,156" />
+
+<item itemtype="Connector" uid="connector-607" startpinid="Buffer-480-in0" endpinid="Node-633-0" pointList="-768,160,-768,156,-712,156" />
+
+<item itemtype="Connector" uid="connector-608" startpinid="Node-550-2" endpinid="Node-489-2" pointList="-788,72,-788,292,-756,292" />
+
+<item itemtype="Connector" uid="connector-609" startpinid="Node-550-1" endpinid="Node-553-0" pointList="-788,72,-588,72" />
+
+<item itemtype="Connector" uid="connector-610" startpinid="Node-553-2" endpinid="SwitchDip-501-switch0-pinN" pointList="-588,72,-588,88" />
+
+<item itemtype="Connector" uid="connector-611" startpinid="Node-553-1" endpinid="Node-556-0" pointList="-588,72,-580,72" />
+
+<item itemtype="Connector" uid="connector-612" startpinid="Node-556-2" endpinid="SwitchDip-501-switch1-pinN" pointList="-580,72,-580,88" />
+
+<item itemtype="Connector" uid="connector-613" startpinid="Node-556-1" endpinid="Node-559-0" pointList="-580,72,-572,72" />
+
+<item itemtype="Connector" uid="connector-614" startpinid="Node-559-2" endpinid="SwitchDip-501-switch2-pinN" pointList="-572,72,-572,88" />
+
+<item itemtype="Connector" uid="connector-615" startpinid="Node-559-1" endpinid="SwitchDip-501-switch3-pinN" pointList="-572,72,-564,72,-564,88" />
+
+<item itemtype="Connector" uid="connector-616" startpinid="Buffer-564-out" endpinid="And Gate-565-in0" pointList="-368,192,-368,252,-360,252" />
+
+<item itemtype="Connector" uid="connector-590" startpinid="And Gate-487-in1" endpinid="Node-618-0" pointList="-496,260,-496,292" />
+
+<item itemtype="Connector" uid="Connector-619" startpinid="Node-618-2" endpinid="Node-498-0" pointList="-496,292,-632,292" />
+
+<item itemtype="Connector" uid="Connector-620" startpinid="Node-618-1" endpinid="And Gate-565-in1" pointList="-496,292,-360,292,-360,260" />
+
+<item itemtype="Connector" uid="Connector-621" startpinid="And Gate-565-out" endpinid="FlipFlopD-563-in2" pointList="-328,256,-308,256,-308,216" />
+
+<item itemtype="Connector" uid="Connector-622" startpinid="FlipFlopD-563-out1" endpinid="FlipFlopD-563-in0" pointList="-292,200,-276,200,-276,228,-344,228,-344,192,-332,192" />
+
+<item itemtype="Connector" uid="Connector-623" startpinid="FlipFlopD-563-in1" endpinid="Node-642-0" pointList="-316,176,-316,160" />
+
+<item itemtype="Connector" uid="Connector-625" startpinid="Node-624-2" endpinid="FlipFlopD-506-out1" pointList="-408,200,-424,200" />
+
+<item itemtype="Connector" uid="Connector-626" startpinid="Node-624-1" endpinid="FlipFlopD-563-in3" pointList="-408,200,-332,200" />
+
+<item itemtype="Connector" uid="connector-586" startpinid="Node-504-2" endpinid="Node-550-0" pointList="-816,72,-788,72" />
+
+<item itemtype="Connector" uid="Connector-628" startpinid="FlipFlopD-563-out0" endpinid="7-Seg BCD-503-in3" pointList="-292,192,-236,192,-236,72" />
+
+<item itemtype="Connector" uid="Connector-629" startpinid="FlipFlopD-506-out0" endpinid="7-Seg BCD-503-in2" pointList="-424,192,-384,192,-384,152,-228,152,-228,72" />
+
+<item itemtype="Connector" uid="Connector-630" startpinid="FlipFlopD-479-out0" endpinid="7-Seg BCD-503-in1" pointList="-556,192,-520,192,-520,144,-220,144,-220,72" />
+
+<item itemtype="Connector" uid="Connector-631" startpinid="FlipFlopD-495-out0" endpinid="7-Seg BCD-503-in0" pointList="-688,192,-656,192,-656,136,-212,136,-212,72" />
+
+<item itemtype="Connector" uid="Connector-632" startpinid="SwitchDip-501-switch0-pinP" endpinid="Node-633-1" pointList="-588,112,-588,128,-712,128,-712,156" />
+
+<item itemtype="Connector" uid="Connector-634" startpinid="Node-633-2" endpinid="FlipFlopD-495-in1" pointList="-712,156,-712,176" />
+
+<item itemtype="Connector" uid="Connector-635" startpinid="SwitchDip-501-switch1-pinP" endpinid="Node-636-1" pointList="-580,112,-580,156" />
+
+<item itemtype="Connector" uid="Connector-637" startpinid="Node-636-2" endpinid="FlipFlopD-479-in1" pointList="-580,156,-580,176" />
+
+<item itemtype="Connector" uid="Connector-638" startpinid="SwitchDip-501-switch2-pinP" endpinid="Node-639-1" pointList="-572,112,-572,128,-448,128,-448,160" />
+
+<item itemtype="Connector" uid="Connector-640" startpinid="Node-639-2" endpinid="FlipFlopD-506-in1" pointList="-448,160,-448,176" />
+
+<item itemtype="Connector" uid="Connector-641" startpinid="SwitchDip-501-switch3-pinP" endpinid="Node-642-1" pointList="-564,112,-564,120,-316,120,-316,160" />
+
+<item itemtype="Connector" uid="Connector-643" startpinid="Node-642-2" endpinid="Buffer-564-in0" pointList="-316,160,-368,160" />
+
+</circuit>
